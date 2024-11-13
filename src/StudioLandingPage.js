@@ -26,7 +26,8 @@ function StudioLandingPage() {
           <h2>About Me</h2>
           <div className="about-content">
             <p>
-              I am a violinist and educator with a Master's degree from Juilliard and a background in Computer Science from Columbia University. With a passion for teaching and sharing music, I aim to create a supportive and engaging environment for students of all ages and skill levels.
+              I am a violinist and educator with a Master's degree from Juilliard and a background in Computer Science from Columbia University. With a passion for teaching and sharing music, I aim to create a supportive and engaging environment for students of all ages and skill levels. <br>
+              Learn more about me: <a href="https://piercegwang.github.io">piercegwang.github.io</a>
             </p>
             <div className="about-image">
               <img src={require('./images/artist_photo.jpg')} alt="Pierce Wang looking off dreamily to the side." />
