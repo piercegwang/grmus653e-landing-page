@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/grmus653e-landing-page/static/css/main.cad73301.css",
+    "main.js": "/grmus653e-landing-page/static/js/main.f0e927fc.js",
+    "static/js/453.605c6e34.chunk.js": "/grmus653e-landing-page/static/js/453.605c6e34.chunk.js",
+    "static/media/artist_photo.jpg": "/grmus653e-landing-page/static/media/artist_photo.e69b308906df87585bd0.jpg",
+    "static/media/background_image.jpg": "/grmus653e-landing-page/static/media/background_image.590bf3fb9e6219f14999.jpg",
+    "index.html": "/grmus653e-landing-page/index.html",
+    "main.cad73301.css.map": "/grmus653e-landing-page/static/css/main.cad73301.css.map",
+    "main.f0e927fc.js.map": "/grmus653e-landing-page/static/js/main.f0e927fc.js.map",
+    "453.605c6e34.chunk.js.map": "/grmus653e-landing-page/static/js/453.605c6e34.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cad73301.css",
+    "static/js/main.f0e927fc.js"
+  ]
+}
