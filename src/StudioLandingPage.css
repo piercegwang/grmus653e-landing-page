@@ -12,7 +12,7 @@ header {
   height: 400px;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/background_image.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/background_image.jpg');
 }
 
 .header-overlay {
@@ -46,11 +46,25 @@ header {
   z-index: -1;
 }
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.about, .services, .contact {
   margin-bottom: 40px;
+}
+
+.about-panel, .lessons-panel, .contact-panel {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-panel h2, .lessons-panel h2, .contact-panel h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-content, .lessons-content, .contact-content {
+  padding: 20px;
 }
 
 .about-image {
@@ -63,61 +77,33 @@ header {
 }
 
 .about-image img {
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   object-fit: cover;
 }
 
-.about-content {
-  width: 600px;
-  margin: 20px;
-}
-
-.about-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.services {
-  margin-bottom: 40px;
-}
-
-.services h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.services ul {
+.lessons-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.services li {
+.lessons-content li {
   margin-bottom: 20px;
 }
 
-.services li h3 {
+.lessons-content li h3 {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-.contact {
-  margin-bottom: 40px;
-}
-
-.contact h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.contact ul {
+.contact-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.contact li {
+.contact-content li {
   margin-bottom: 20px;
 }
 
@@ -126,7 +112,7 @@ footer {
   height: 200px;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/background_image.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/background_image.jpg');
 }
 
 .footer-background {
@@ -155,57 +141,33 @@ footer {
   font-size: 18px;
   margin-bottom: 10px;
 }
-
-/* Animations */
-
-.header-overlay {
-  animation: fadeIn 2s;
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.about-image {
-  animation: scaleUp 2s;
+.top-nav li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-@keyframes scaleUp {
-  from {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
-  }
+.top-nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.services li {
-  animation: slideIn 2s;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.contact li {
-  animation: slideIn 2s;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+.top-nav a:hover {
+  color: #ccc;
 }
