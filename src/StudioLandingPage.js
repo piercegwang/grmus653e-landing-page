@@ -12,6 +12,9 @@ function StudioLandingPage() {
           <li>
             <a href="#media">Media</a>
           </li>
+          <li>
+            <a href="#policy">Studio Policy</a>
+          </li>
         </ul>
       </nav>
       <header>
